@@ -21,6 +21,8 @@ spring:
     port: ${PROD_AMQP_PORT}
     username: ${PROD_AMQP_USERNAME}
     password: ${PROD_AMQP_PASSWORD}
+  #zipkin:
+    #base-url: http://localhost:9411 
     
 resilience4j:
   circuitbreaker:
@@ -80,9 +82,7 @@ management:
   tracing:
     sampling:
       probability: 0.05
-  #zipkin:
-    #base-url: http://localhost:9411 
-
+  
 logging:
   level:
     com:
